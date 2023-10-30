@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header-container">
+      <h1 class="header-container__item header-container__page-title">
+        Toevoegen aan database
+      </h1>
+      <a class="header-container__item" href="index.html">
+        <button class="header-container__page-switcher">Programma</button>
+      </a>
+    </div>
+    <!-- Forms -->
+    <div class="add__grid-container">
+      <!-- Event -->
+      <div class="add__grid-container__item add__grid-container__event">
+        <form id="event-form" class="add__grid-container__form">
+          <h2 class="event-form__title">Event</h2>
+          <label class="add__grid-container__form__label" for="input-date">
+            Datum
+          </label>
+          <input
+            id="input-date"
+            class="add__grid-container__form__input"
+            name="date"
+            type="date"
+            autocomplete="off"
+            required
+          />
+          <label class="add__grid-container__form__label" for="input-time">
+            Tijd
+          </label>
+          <input
+            id="input-time"
+            class="add__grid-container__form__input"
+            name="time"
+            type="time"
+            autocomplete="off"
+            required
+          />
+          <label class="add__grid-container__form__label" for="input-event-name"
+            >Naam van event</label
+          >
+          <input
+            id="input-event-name"
+            class="add__grid-container__form__input"
+            name="event-name"
+            type="text"
+            maxlength="30"
+            autocomplete="off"
+            required
+          />
+          <label class="add__grid-container__form__label" for="input-cost">
+            Prijs
+          </label>
+          <div class="flex">
+            <p>€</p>
+            <input
+              id="input-cost"
+              class="add__grid-container__form__input"
+              name="cost"
+              type="number"
+              min="0"
+              step="0.01"
+              autocomplete="off"
+              required
+            />
+          </div>
+        </form>
+        <button
+          class="add__grid-container__form__submit"
+          form="event-form"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+      <!-- Band -->
+      <div class="add__grid-container__item add__grid-container__event">
+        <form id="band-form" class="add__grid-container__form">
+          <h2 class="event-form__title">Band</h2>
+          <label class="add__grid-container__form__label" for="input-band-name">
+            Naam van band
+          </label>
+          <input
+            id="input-band-name"
+            class="add__grid-container__form__input"
+            name="band-name"
+            type="text"
+            maxlength="64"
+            autocomplete="off"
+            required
+          />
+          <label class="add__grid-container__form__label" for="input-genre">
+            Genre
+          </label>
+          <input
+            id="input-genre"
+            class="add__grid-container__form__input"
+            name="genre"
+            type="text"
+            maxlength="64"
+            autocomplete="off"
+            required
+          />
+        </form>
+        <button
+          class="add__grid-container__form__submit"
+          form="band-form"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="resources/js/script.js"></script>
+  </body>
+</html>
