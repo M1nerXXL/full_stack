@@ -36,12 +36,69 @@ a {
 
 .header-container__page-switcher {
   width: 180px;
-  height: 30px;
+  height: 50px;
+}
+
+.index__schedule {
+  margin-bottom: 20px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.index__schedule__no-plans {
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+.index__schedule__entry {
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 4fr 1fr 1fr 4fr;
+  column-gap: 10px;
+  justify-items: center;
+
+  margin: 1px 2.5%;
+  padding: 10px;
+  width: 95%;
+  border: 2px solid black;
+  background-color: rgb(200, 200, 200);
+}
+
+.index__schedule__entry__text {
+  font-size: 1.5rem;
+}
+
+.index__schedule__entry__text-datetime {
+  justify-self: start;
+}
+
+.index__schedule__entry__text-eventname {
+  grid-column: span 2;
+  font-weight: bold;
+}
+
+.index__schedule__entry__text-entrancefee {
+  justify-self: end;
+}
+
+.index__schedule__entry__text-nobands {
+  grid-column: 1 / 5;
+}
+
+.index__schedule__entry__text-bands {
+  grid-column: span 2;
+  justify-self: end;
+}
+
+.index__schedule__entry__text-bandentry {
+  grid-column: 3 / 5;
+  justify-self: start;
 }
 
 .add__grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   width: 100%;
   height: 350px;
@@ -53,7 +110,7 @@ a {
   justify-content: space-between;
   align-items: center;
 
-  margin: 0 20px;
+  margin: 0 10px;
   padding: 10px;
   background-color: rgb(200, 200, 200);
   border-radius: 5px;
